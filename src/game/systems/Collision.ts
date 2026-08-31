@@ -1,4 +1,4 @@
-import type { Wall } from '../world/Map';
+import type { Obstacle as Wall } from '../world/Map';
 
 export interface Rectangle {
     x: number;

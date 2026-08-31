@@ -6,7 +6,7 @@ export class Input {
   mouseX = 0;
   mouseY = 0;
 
-  constructor(private canvas: HTMLCanvasElement) {
+  constructor(canvas: HTMLCanvasElement) {
     window.addEventListener("keydown", (event) => {
       this.keys.add(event.code);
 

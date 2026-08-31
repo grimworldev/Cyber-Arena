@@ -2,7 +2,11 @@ import { Enemy, type EnemyStats } from "../entities/Enemy";
 import { GameMap } from "../world/Map";
 
 export class EnemySpawner {
-  constructor(private map: GameMap) {}
+  private map: GameMap;
+
+  constructor(map: GameMap) {
+    this.map = map;
+  }
 
   createWave(wave: number): Enemy[] {
     const enemies: Enemy[] = [];

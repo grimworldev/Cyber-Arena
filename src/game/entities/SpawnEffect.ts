@@ -18,7 +18,13 @@ export class SpawnEffect {
 
   private readonly duration = 0.8;
 
-  constructor(private readonly x: number, private readonly y: number) {
+  private readonly x: number;
+  private readonly y: number;
+
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+
     this.createParticles();
   }
 
