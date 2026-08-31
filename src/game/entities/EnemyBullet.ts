@@ -1,6 +1,6 @@
 import { checkWallCollision } from "../systems/Collision";
 
-import type { Wall } from "../world/Map";
+import type { Obstacle as Wall } from '../world/Map';
 
 export class EnemyBullet {
   private x: number;
