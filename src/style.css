@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #05070d;
+
+  font-family:
+    "Courier New",
+    monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#game-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #111827 0%,
+      #05070d 70%
+    );
+}
+
+#game-container {
+  position: relative;
+
+  width: min(96vw, 1280px);
+  aspect-ratio: 16 / 10;
+
+  max-height: 96vh;
+
+  border: 3px solid #263c68;
+
+  box-shadow:
+    0 0 0 2px #080b12,
+    0 0 25px rgba(0, 255, 225, 0.15);
+
+  background: #080b12;
+
+  overflow: hidden;
+}
+
+#game-canvas {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+  background: #080b12;
+
+  cursor: crosshair;
+}
+
+#hud {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  color: #ffffff;
+
+  font-weight: bold;
+
+  text-shadow:
+    2px 2px 0 #000;
+}
+
+.hud-top {
+  position: absolute;
+
+  top: 12px;
+  left: 16px;
+  right: 16px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 20px;
+}
+
+.hud-bottom {
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+}
+
+.health-container {
+  width: 280px;
+}
+
+.health-label {
+  margin-bottom: 5px;
+
+  font-size: 16px;
+}
+
+.health-bar {
+  width: 100%;
+  height: 18px;
+
+  border: 2px solid #ffffff;
+
+  background: #151a24;
+}
+
+#health-fill {
+  height: 100%;
+
+  width: 100%;
+
+  background: #00ffe1;
+
+  transition: width 0.1s linear;
+}
+
+.ammo-container {
+  text-align: right;
+
+  font-size: 22px;
+}
+
+#reload-value {
+  margin-top: 4px;
+
+  font-size: 14px;
+
+  color: #00ffe1;
+}
+
+#death-screen {
+  position: absolute;
+
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  text-align: center;
+}
+
+#death-screen.active {
+  display: flex;
+}
+
+.death-title {
+  font-size: 42px;
+
+  letter-spacing: 4px;
+
+  color: #ff315c;
+}
+
+.death-text {
+  margin-top: 15px;
+
+  font-size: 18px;
+}
+
+#respawn-value {
+  margin-top: 15px;
+
+  font-size: 50px;
+
+  color: #00ffe1;
+}
+
+@media (max-width: 900px) {
+  .hud-top {
+    font-size: 14px;
+  }
+
+  .health-container {
+    width: 180px;
+  }
+
+  .ammo-container {
+    font-size: 16px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 8, 14, 0.92);
+  z-index: 10;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.overlay-panel {
+  text-align: center;
+  padding: 32px 48px;
+  border: 2px solid #00ffe1;
+  background: #0b1018;
+}
+
+.overlay-title {
+  font-size: 32px;
+  color: #00ffe1;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.overlay-subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.overlay-controls {
+  color: #8fa3bf;
+  font-size: 13px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.overlay-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.overlay-button {
+  padding: 12px 28px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #00ffe1;
+  color: #05080e;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.overlay-button:hover {
+  background: #7dfff0;
+}
+
+.overlay-button-secondary {
+  background: transparent;
+  color: #ff315c;
+  border: 2px solid #ff315c;
+}
+
+.overlay-button-secondary:hover {
+  background: rgba(255, 49, 92, 0.15);
+}

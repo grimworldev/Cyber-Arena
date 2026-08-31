@@ -1,0 +1,32 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" fill="#14161d"/>
+
+  <!-- metallic panel grid -->
+  <rect x="4" y="4" width="56" height="56" fill="#1c1f28" stroke="#2e3340" stroke-width="1.5"/>
+  <rect x="68" y="4" width="56" height="56" fill="#181a22" stroke="#2e3340" stroke-width="1.5"/>
+  <rect x="4" y="68" width="56" height="56" fill="#181a22" stroke="#2e3340" stroke-width="1.5"/>
+  <rect x="68" y="68" width="56" height="56" fill="#1c1f28" stroke="#2e3340" stroke-width="1.5"/>
+
+  <!-- rivets -->
+  <circle cx="8" cy="8" r="1.5" fill="#4a5060"/>
+  <circle cx="120" cy="8" r="1.5" fill="#4a5060"/>
+  <circle cx="8" cy="120" r="1.5" fill="#4a5060"/>
+  <circle cx="120" cy="120" r="1.5" fill="#4a5060"/>
+  <circle cx="64" cy="64" r="1.5" fill="#4a5060"/>
+
+  <!-- hazard stripe strip -->
+  <g opacity="0.85">
+    <rect x="0" y="60" width="16" height="8" fill="#e8c22a" transform="skewX(-20)"/>
+    <rect x="16" y="60" width="16" height="8" fill="#14161d" transform="skewX(-20)"/>
+    <rect x="32" y="60" width="16" height="8" fill="#e8c22a" transform="skewX(-20)"/>
+    <rect x="48" y="60" width="16" height="8" fill="#14161d" transform="skewX(-20)"/>
+  </g>
+
+  <!-- exposed wiring bundle -->
+  <path d="M100 20 Q110 40 96 55 Q86 68 100 85" fill="none" stroke="#3a4a5c" stroke-width="3"/>
+  <circle cx="100" cy="20" r="2" fill="#4fc3ff"/>
+  <circle cx="100" cy="85" r="2" fill="#ff4f4f"/>
+
+  <!-- screen glow blue accent -->
+  <rect x="20" y="90" width="24" height="16" fill="#1e3a5c" stroke="#4fc3ff" stroke-width="1"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shackFill" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f95a6"/>
+      <stop offset="1" stop-color="#5c7285"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shack body -->
+  <rect x="20" y="60" width="216" height="176" fill="url(#shackFill)" stroke="#3f5164" stroke-width="4"/>
+
+  <!-- corrugated ridges -->
+  <line x1="44" y1="60" x2="44" y2="236" stroke="#4c6072" stroke-width="3"/>
+  <line x1="80" y1="60" x2="80" y2="236" stroke="#4c6072" stroke-width="3"/>
+  <line x1="116" y1="60" x2="116" y2="236" stroke="#4c6072" stroke-width="3"/>
+  <line x1="152" y1="60" x2="152" y2="236" stroke="#4c6072" stroke-width="3"/>
+  <line x1="188" y1="60" x2="188" y2="236" stroke="#4c6072" stroke-width="3"/>
+  <line x1="212" y1="60" x2="212" y2="236" stroke="#4c6072" stroke-width="3"/>
+
+  <!-- rust patches -->
+  <ellipse cx="70" cy="150" rx="14" ry="20" fill="#9c6b4a" opacity="0.5"/>
+  <ellipse cx="190" cy="190" rx="10" ry="16" fill="#9c6b4a" opacity="0.4"/>
+
+  <!-- snow cap roof -->
+  <path d="M10 60 L128 18 L246 60 Z" fill="#eef5fa" stroke="#c3d5e2" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M20 58 L128 24 L236 58" fill="none" stroke="#dfeaf3" stroke-width="4" opacity="0.7"/>
+
+  <!-- frozen pipe -->
+  <rect x="216" y="70" width="12" height="140" rx="6" fill="#c3d5e2" stroke="#8fa8bc" stroke-width="2"/>
+
+  <!-- warning beacon -->
+  <circle cx="60" cy="90" r="10" fill="#ff8a1a"/>
+  <circle cx="60" cy="90" r="16" fill="#ff8a1a" opacity="0.3"/>
+
+  <!-- window glow -->
+  <rect x="110" y="120" width="36" height="30" fill="#ffcf7a" stroke="#3f5164" stroke-width="2"/>
+</svg>

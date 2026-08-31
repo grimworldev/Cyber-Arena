@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="desertBg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0c48a"/>
+      <stop offset="1" stop-color="#c9a968"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" fill="url(#desertBg)"/>
+
+  <!-- sandstone slab seams -->
+  <path d="M0 40 Q40 46 50 20 T90 30 Q110 34 128 24" fill="none" stroke="#a8895a" stroke-width="2" opacity="0.6"/>
+  <path d="M0 95 Q30 85 60 100 T128 90" fill="none" stroke="#a8895a" stroke-width="2" opacity="0.6"/>
+
+  <!-- fine cracks -->
+  <path d="M20 20 L26 45 L15 60" fill="none" stroke="#9c8156" stroke-width="1" opacity="0.7"/>
+  <path d="M100 60 L92 80 L108 100" fill="none" stroke="#9c8156" stroke-width="1" opacity="0.7"/>
+
+  <!-- turquoise inlay accent -->
+  <circle cx="64" cy="64" r="4" fill="#5fc9bd" opacity="0.7"/>
+  <circle cx="64" cy="64" r="8" fill="none" stroke="#5fc9bd" stroke-width="1" opacity="0.4"/>
+
+  <!-- drifting sand -->
+  <path d="M0 110 Q20 106 40 112 T80 108" fill="none" stroke="#f2e0b0" stroke-width="2" opacity="0.5"/>
+</svg>

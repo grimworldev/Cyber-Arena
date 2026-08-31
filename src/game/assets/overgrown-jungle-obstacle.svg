@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trunkFill" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5a4326"/>
+      <stop offset="1" stop-color="#382718"/>
+    </linearGradient>
+  </defs>
+
+  <!-- stone ruin base -->
+  <rect x="30" y="190" width="196" height="56" fill="#6a6a4a" stroke="#3a3a26" stroke-width="4"/>
+  <line x1="90" y1="190" x2="90" y2="246" stroke="#3a3a26" stroke-width="2"/>
+  <line x1="160" y1="190" x2="160" y2="246" stroke="#3a3a26" stroke-width="2"/>
+
+  <!-- tree trunk -->
+  <path d="M90 200 Q80 120 100 60 Q108 24 128 10 Q148 24 156 60 Q176 120 166 200 Z"
+        fill="url(#trunkFill)" stroke="#241a0e" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- bark texture lines -->
+  <path d="M100 190 Q96 120 108 70" fill="none" stroke="#241a0e" stroke-width="2" opacity="0.6"/>
+  <path d="M156 190 Q160 120 148 70" fill="none" stroke="#241a0e" stroke-width="2" opacity="0.6"/>
+  <path d="M128 180 L128 40" fill="none" stroke="#241a0e" stroke-width="2" opacity="0.4"/>
+
+  <!-- moss patches -->
+  <ellipse cx="105" cy="150" rx="16" ry="24" fill="#3f6b2a" opacity="0.7"/>
+  <ellipse cx="150" cy="100" rx="14" ry="20" fill="#3f6b2a" opacity="0.6"/>
+
+  <!-- hanging lianas -->
+  <path d="M108 60 Q100 110 112 170 Q118 200 106 240" fill="none" stroke="#4a7a2e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150 50 Q160 100 148 160 Q142 200 156 246" fill="none" stroke="#4a7a2e" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- roots consuming ruins -->
+  <path d="M70 246 Q60 220 80 200" fill="none" stroke="#4a7a2e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M190 246 Q205 220 185 200" fill="none" stroke="#4a7a2e" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- floral accents -->
+  <circle cx="112" cy="220" r="4" fill="#e04fc9"/>
+  <circle cx="180" cy="210" r="3.5" fill="#f2d23a"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="lavaGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#ffcc33"/>
+      <stop offset="0.4" stop-color="#ff6a1a"/>
+      <stop offset="1" stop-color="#3a0d05" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="128" height="128" fill="#1a1210"/>
+
+  <!-- charcoal rock texture blocks -->
+  <path d="M0 0 L40 10 L30 45 L0 40 Z" fill="#221713"/>
+  <path d="M128 0 L90 15 L100 50 L128 45 Z" fill="#1e1512"/>
+  <path d="M0 128 L35 118 L45 90 L0 85 Z" fill="#231814"/>
+  <path d="M128 128 L95 115 L105 85 L128 90 Z" fill="#1c1310"/>
+
+  <!-- magma crack network -->
+  <path d="M0 64 L30 60 L46 70 L64 64 L80 72 L100 62 L128 66"
+        fill="none" stroke="#ff6a1a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M0 64 L30 60 L46 70 L64 64 L80 72 L100 62 L128 66"
+        fill="none" stroke="#ffcc33" stroke-width="1" stroke-linecap="round"/>
+
+  <path d="M46 70 L50 100 M80 72 L76 110" stroke="#ff6a1a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- glow pool -->
+  <circle cx="64" cy="66" r="26" fill="url(#lavaGlow)" opacity="0.8"/>
+
+  <!-- embers -->
+  <circle cx="20" cy="20" r="1.5" fill="#ffcc33"/>
+  <circle cx="105" cy="30" r="1" fill="#ff6a1a"/>
+  <circle cx="15" cy="100" r="1" fill="#ff6a1a"/>
+  <circle cx="110" cy="105" r="1.5" fill="#ffcc33"/>
+</svg>

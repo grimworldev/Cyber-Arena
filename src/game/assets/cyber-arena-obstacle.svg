@@ -1,0 +1,37 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberCrateFill" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#242c47"/>
+      <stop offset="1" stop-color="#141a2c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- base block -->
+  <rect x="14" y="14" width="228" height="228" rx="6" fill="url(#cyberCrateFill)" stroke="#3a4a75" stroke-width="4"/>
+
+  <!-- neon rim highlights -->
+  <rect x="14" y="14" width="228" height="6" fill="#00e5ff" opacity="0.8"/>
+  <rect x="14" y="236" width="228" height="6" fill="#ff2fd6" opacity="0.8"/>
+  <rect x="14" y="14" width="6" height="228" fill="#00e5ff" opacity="0.5"/>
+  <rect x="236" y="14" width="6" height="228" fill="#ff2fd6" opacity="0.5"/>
+
+  <!-- panel seams -->
+  <line x1="14" y1="86" x2="242" y2="86" stroke="#3a4a75" stroke-width="2"/>
+  <line x1="14" y1="170" x2="242" y2="170" stroke="#3a4a75" stroke-width="2"/>
+  <line x1="128" y1="14" x2="128" y2="242" stroke="#3a4a75" stroke-width="2"/>
+
+  <!-- scuff marks -->
+  <path d="M40 40 L90 55 M60 100 L110 92" stroke="#4a5a85" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M170 190 L210 200 M150 210 L190 225" stroke="#4a5a85" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- glowing core vent -->
+  <rect x="108" y="108" width="40" height="40" rx="4" fill="#0a0e1a" stroke="#00e5ff" stroke-width="2"/>
+  <circle cx="128" cy="128" r="8" fill="#00e5ff" opacity="0.85"/>
+  <circle cx="128" cy="128" r="14" fill="#00e5ff" opacity="0.25"/>
+
+  <!-- rivets -->
+  <circle cx="24" cy="24" r="3" fill="#5a6a95"/>
+  <circle cx="232" cy="24" r="3" fill="#5a6a95"/>
+  <circle cx="24" cy="232" r="3" fill="#5a6a95"/>
+  <circle cx="232" cy="232" r="3" fill="#5a6a95"/>
+</svg>

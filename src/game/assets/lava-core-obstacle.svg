@@ -1,0 +1,33 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="obsidianFill" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a1e1a"/>
+      <stop offset="1" stop-color="#120a08"/>
+    </linearGradient>
+    <linearGradient id="lavaUnderglow" x1="0" y1="256" x2="0" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffcc33" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff6a1a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- jagged obsidian pillar silhouette -->
+  <path d="M60 246 L40 160 L70 90 L55 40 L100 16 L130 44 L118 88 L170 60 L210 110 L190 170 L216 246 Z"
+        fill="url(#obsidianFill)" stroke="#0a0605" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- crack highlights -->
+  <path d="M100 16 L92 90 L118 88" fill="none" stroke="#ff6a1a" stroke-width="2" opacity="0.8"/>
+  <path d="M70 90 L84 150 L60 160" fill="none" stroke="#ff6a1a" stroke-width="2" opacity="0.6"/>
+  <path d="M170 60 L160 130 L190 170" fill="none" stroke="#ff6a1a" stroke-width="2" opacity="0.6"/>
+
+  <!-- amber underglow -->
+  <rect x="20" y="150" width="216" height="96" fill="url(#lavaUnderglow)"/>
+
+  <!-- hanging chain -->
+  <path d="M150 10 L150 40 M150 20 L165 20 M150 30 L165 30"
+        stroke="#3a2e28" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- small ember glows -->
+  <circle cx="90" cy="130" r="3" fill="#ffcc33"/>
+  <circle cx="160" cy="180" r="2.5" fill="#ff6a1a"/>
+  <circle cx="55" cy="200" r="2" fill="#ffcc33"/>
+</svg>

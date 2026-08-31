@@ -1,0 +1,39 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberBg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0e1a"/>
+      <stop offset="1" stop-color="#131a2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" fill="url(#cyberBg)"/>
+
+  <!-- metallic scuff panels -->
+  <rect x="4" y="4" width="52" height="52" fill="#151d30" stroke="#243255" stroke-width="1"/>
+  <rect x="72" y="4" width="52" height="52" fill="#111827" stroke="#243255" stroke-width="1"/>
+  <rect x="4" y="72" width="52" height="52" fill="#111827" stroke="#243255" stroke-width="1"/>
+  <rect x="72" y="72" width="52" height="52" fill="#151d30" stroke="#243255" stroke-width="1"/>
+
+  <!-- scuff marks -->
+  <path d="M10 20 L28 26 M40 14 L46 30" stroke="#2a3555" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M90 100 L108 96 M84 110 L100 118" stroke="#2a3555" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- neon grid lines -->
+  <line x1="64" y1="0" x2="64" y2="128" stroke="#00e5ff" stroke-width="1.5" opacity="0.55"/>
+  <line x1="0" y1="64" x2="128" y2="64" stroke="#ff2fd6" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- glow dots at intersections -->
+  <circle cx="64" cy="64" r="3" fill="#ffffff" opacity="0.9"/>
+  <circle cx="64" cy="64" r="7" fill="#00e5ff" opacity="0.25"/>
+
+  <circle cx="0" cy="64" r="2" fill="#ff2fd6"/>
+  <circle cx="128" cy="64" r="2" fill="#ff2fd6"/>
+  <circle cx="64" cy="0" r="2" fill="#00e5ff"/>
+  <circle cx="64" cy="128" r="2" fill="#00e5ff"/>
+
+  <!-- corner rivets -->
+  <circle cx="6" cy="6" r="1.5" fill="#4a5a80"/>
+  <circle cx="122" cy="6" r="1.5" fill="#4a5a80"/>
+  <circle cx="6" cy="122" r="1.5" fill="#4a5a80"/>
+  <circle cx="122" cy="122" r="1.5" fill="#4a5a80"/>
+</svg>

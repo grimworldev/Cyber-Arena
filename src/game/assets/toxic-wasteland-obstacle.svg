@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barrelFill" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c6b2e"/>
+      <stop offset="1" stop-color="#38431c"/>
+    </linearGradient>
+    <radialGradient id="slimePool" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#aaff33" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#aaff33" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- slime puddle underneath -->
+  <ellipse cx="128" cy="230" rx="110" ry="22" fill="url(#slimePool)"/>
+
+  <!-- barrel 1 -->
+  <rect x="30" y="90" width="90" height="150" rx="10" fill="url(#barrelFill)" stroke="#232b12" stroke-width="4"/>
+  <ellipse cx="75" cy="90" rx="45" ry="12" fill="#6b7d34" stroke="#232b12" stroke-width="4"/>
+  <line x1="30" y1="130" x2="120" y2="130" stroke="#232b12" stroke-width="3"/>
+  <line x1="30" y1="200" x2="120" y2="200" stroke="#232b12" stroke-width="3"/>
+
+  <!-- barrel 2 (taller, offset right) -->
+  <rect x="130" y="40" width="96" height="200" rx="10" fill="url(#barrelFill)" stroke="#232b12" stroke-width="4"/>
+  <ellipse cx="178" cy="40" rx="48" ry="13" fill="#6b7d34" stroke="#232b12" stroke-width="4"/>
+  <line x1="130" y1="90" x2="226" y2="90" stroke="#232b12" stroke-width="3"/>
+  <line x1="130" y1="160" x2="226" y2="160" stroke="#232b12" stroke-width="3"/>
+
+  <!-- hazard trefoil badges -->
+  <circle cx="75" cy="165" r="16" fill="#1a1e0d" stroke="#aaff33" stroke-width="2"/>
+  <circle cx="178" cy="140" r="18" fill="#1a1e0d" stroke="#aaff33" stroke-width="2"/>
+
+  <!-- leaking drips -->
+  <path d="M40 240 L36 256 M60 240 L64 256" stroke="#aaff33" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M150 240 L146 256" stroke="#aaff33" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- rust streaks -->
+  <path d="M100 100 L92 190" stroke="#7a5a2a" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+</svg>

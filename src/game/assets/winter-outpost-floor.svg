@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="winterBg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9dcea"/>
+      <stop offset="1" stop-color="#a9c3d8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" fill="url(#winterBg)"/>
+
+  <!-- corrugated steel plate seams -->
+  <line x1="0" y1="0" x2="0" y2="128" stroke="#8fa8bc" stroke-width="2"/>
+  <line x1="16" y1="0" x2="16" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="32" y1="0" x2="32" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="48" y1="0" x2="48" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="64" y1="0" x2="64" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="80" y1="0" x2="80" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="96" y1="0" x2="96" y2="128" stroke="#b9cdde" stroke-width="1"/>
+  <line x1="112" y1="0" x2="112" y2="128" stroke="#b9cdde" stroke-width="1"/>
+
+  <!-- rust streaks -->
+  <path d="M20 10 L24 60" stroke="#9c6b4a" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M90 20 L86 80" stroke="#9c6b4a" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- snow drifts -->
+  <ellipse cx="30" cy="100" rx="26" ry="10" fill="#eef5fa" opacity="0.7"/>
+  <ellipse cx="95" cy="30" rx="22" ry="8" fill="#eef5fa" opacity="0.6"/>
+
+  <!-- wind particles -->
+  <path d="M0 50 L20 46 M40 66 L60 62 M80 40 L100 36" stroke="#ffffff" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+</svg>

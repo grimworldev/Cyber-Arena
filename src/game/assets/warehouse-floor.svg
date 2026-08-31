@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightBeam" x1="0" y1="0" x2="40" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8d9a0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8d9a0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" fill="#2b2823"/>
+
+  <!-- concrete panel seams -->
+  <rect x="2" y="2" width="60" height="60" fill="#302c26" stroke="#403a30" stroke-width="1"/>
+  <rect x="66" y="2" width="60" height="60" fill="#28251f" stroke="#403a30" stroke-width="1"/>
+  <rect x="2" y="66" width="60" height="60" fill="#28251f" stroke="#403a30" stroke-width="1"/>
+  <rect x="66" y="66" width="60" height="60" fill="#302c26" stroke="#403a30" stroke-width="1"/>
+
+  <!-- oil / dust stains -->
+  <ellipse cx="40" cy="90" rx="20" ry="8" fill="#1c1a16" opacity="0.6"/>
+  <ellipse cx="95" cy="35" rx="16" ry="6" fill="#1c1a16" opacity="0.5"/>
+
+  <!-- diagonal volumetric light beam -->
+  <polygon points="0,0 40,0 20,128 -20,128" fill="url(#lightBeam)"/>
+
+  <!-- floor markings -->
+  <rect x="10" y="110" width="30" height="6" fill="#c9a227" opacity="0.5"/>
+</svg>
